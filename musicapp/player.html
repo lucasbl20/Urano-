@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Player de Música</title>
+  <link rel="stylesheet" href="player.css">
+</head>
+<body>
+  <div id="sidebar">
+    <ul>
+      <li><a href="#" id="library-link">Biblioteca</a></li>
+      <li><a href="#" id="liked-songs-link">Músicas Curtidas</a></li>
+      <li><a href="#" id="podcasts-link">Podcasts</a></li>
+      <li><a href="#" id="playlists-link">Playlists Criadas</a></li>
+    </ul>
+  </div>
+  
+  <div id="main">
+    <div id="player">
+      <div class="music-info">
+        <p id="music-title">Música: Exemplo</p>
+      </div>
+      <audio id="audio" src="musica.mp3"></audio>
+      <div class="controls">
+        <button id="prev-btn">⏮️</button>
+        <button id="play-btn">▶️</button>
+        <button id="pause-btn">⏸️</button>
+        <button id="next-btn">⏭️</button>
+      </div>
+      <div class="progress-container">
+        <span id="current-time">0:00</span>
+        <input type="range" id="progress-bar" value="0" max="100" step="1">
+        <span id="duration">0:00</span>
+      </div>
+      <div class="volume-container">
+        <input type="range" id="volume-bar" value="100" max="100" step="1">
+      </div>
+    </div>
+
+    <div id="library" class="library-section">
+      <h2>Biblioteca</h2>
+      <div id="library-content">
+        <h3>Músicas Curtidas</h3>
+        <ul id="liked-songs">
+          <!-- Músicas curtidas serão listadas aqui -->
+        </ul>
+        <h3>Podcasts</h3>
+        <ul id="podcasts">
+          <!-- Podcasts serão listados aqui -->
+        </ul>
+        <h3>Playlists Criadas</h3>
+        <ul id="playlists">
+          <!-- Playlists serão listadas aqui -->
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="player.js"></script>
+</body>
+</html>

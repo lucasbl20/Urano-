@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urano Music - Rede Social Musical</title>
+    <link rel="stylesheet" href="feed.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="feed.html" class="sidebar-link active">Feed</a>
+        <a href="MeuPerfil.html" class="sidebar-link">Meu Perfil</a>
+        <a href="#" class="sidebar-link">Pesquisar</a>
+        <a href="../player.html" class="sidebar-link">Player</a>
+        <a href="#" class="sidebar-link">Explorar</a>
+        <a href="#" class="sidebar-link">Mensagens</a>
+        <a href="#" class="sidebar-link">Notificações</a>
+        <a href="#" class="sidebar-link">Perfil</a>
+    </div>
+
+    <!-- Feed de Posts -->
+    <div class="feed">
+        <div class="create-post">
+            <textarea id="newPostContent" placeholder="Compartilhe algo..."></textarea>
+            <input type="file" id="imageInput" accept="image/*">
+            <div class="post-actions">
+                <button class="btn-post" onclick="createPost()">Postar</button>
+            </div>
+        </div>
+        
+        <div id="feed"></div>
+    </div>
+
+    <!-- Chat de Usuários Online -->
+    <div class="chat">
+        <h3>Usuários Online</h3>
+        <div class="user-online" id="user1">
+            <div class="user-info">
+                <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="User" class="user-avatar">
+                <span>Lucas Gomes</span>
+                <div class="online-indicator"></div>
+            </div>
+        </div>
+        <div class="user-online" id="user2">
+            <div class="user-info">
+                <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="User" class="user-avatar">
+                <span>Ana Silva</span>
+                <div class="online-indicator"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Visualização de Imagem -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modalImage" class="modal-content">
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Urano. Criado por Lucas Gomes.</p>
+    </footer>
+
+    <!-- Vinculando o arquivo feed.js -->
+    <script src="feed.js"></script>
+</body>
+</html>

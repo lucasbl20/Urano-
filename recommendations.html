@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recomendações Musicais</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+
+    <!-- Barra de Navegação -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Feed</a></li>
+            <li><a href="radios.html">Rádios</a></li>
+            <li><a href="recommendations.html">Recomendações</a></li>
+            <li><a href="live.html">Lives</a></li>
+        </ul>
+    </nav>
+
+    <!-- Conteúdo de Recomendações de Música -->
+    <div id="recommendations">
+        <h3>Recomendações de Música</h3>
+        <div class="song">
+            <p class="song-title">Música Recomendada 1</p>
+            <audio controls>
+                <source src="caminho/para/musica_recomendada_1.mp3" type="audio/mpeg">
+                Seu navegador não suporta o elemento de áudio.
+            </audio>
+            <button onclick="playRecommendedMusic('Música Recomendada 1')">Ouvir</button>
+        </div>
+        <div class="song">
+            <p class="song-title">Música Recomendada 2</p>
+            <audio controls>
+                <source src="caminho/para/musica_recomendada_2.mp3" type="audio/mpeg">
+                Seu navegador não suporta o elemento de áudio.
+            </audio>
+            <button onclick="playRecommendedMusic('Música Recomendada 2')">Ouvir</button>
+        </div>
+    </div>
+
+</body>
+</html>

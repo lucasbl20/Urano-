@@ -1,0 +1,44 @@
+/* Estilos para a barra de navegação */
+body{
+    font-family: Arial, sans-serif;
+    background-color: rgb(34, 34, 34);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: purple;
+    font-weight: 200;
+}
+
+h2{
+    color: white;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}

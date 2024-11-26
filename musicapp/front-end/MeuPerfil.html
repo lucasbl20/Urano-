@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urano - Meu Perfil</title>
+    <link rel="stylesheet" href="MeuPerfil.css">
+</head>
+<body>
+    <div class="profile-page">
+        <!-- Capa -->
+        <div class="cover-photo">
+            <img id="coverImage" src="https://via.placeholder.com/1200x300" alt="Capa do Perfil">
+            <button class="upload-button" onclick="changeCoverPhoto()">Alterar Capa</button>
+            <input type="file" id="coverInput" style="display: none;" accept="image/*">
+        </div>
+        
+        <!-- Foto de Perfil -->
+        <div class="profile-photo">
+            <img id="profileImage" src="https://via.placeholder.com/150" alt="Foto de Perfil">
+            <button class="upload-button" onclick="changeProfilePhoto()">Alterar Foto</button>
+            <input type="file" id="profileInput" style="display: none;" accept="image/*">
+        </div>
+        
+        <!-- Informações do Usuário -->
+        <div class="profile-info">
+            <h1 id="userName">Lucas Gomes</h1>
+            <p id="userBio">Bem-vindo ao meu perfil! 🚀</p>
+            <button class="edit-bio-button" onclick="editBio()">Editar Bio</button>
+            <textarea id="bioInput" style="display: none;"></textarea>
+            <button id="saveBioButton" style="display: none;" onclick="saveBio()">Salvar</button>
+        </div>
+
+        <!-- Navegação -->
+        <div class="profile-navigation">
+            <button class="nav-button active">Linha do Tempo</button>
+            <button class="nav-button">Sobre</button>
+            <button class="nav-button">Amigos</button>
+            <button class="nav-button">Fotos</button>
+        </div>
+
+        <!-- Conteúdo Principal -->
+        <div class="profile-content">
+            <h2>Minhas Postagens</h2>
+            <div id="userPosts"></div>
+        </div>
+    </div>
+
+    <script src="MeuPerfil.js"></script>
+</body>
+</html>
